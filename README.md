@@ -4,7 +4,8 @@ Descripción breve del proyecto a realizar (2-3 frases).
 
 ## Integrantes del equipo
 
-Omar Achougui Gómez (@OMahou), Diego Alonso Alonso (@Cazagoles).
+Omar Achougui Gómez (@OMahou).....55100
+Diego Alonso Alonso (@Cazagoles).....55110
 
 ## Objetivos del trabajo
 
