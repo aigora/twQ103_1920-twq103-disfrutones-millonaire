@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+
+int main()
+{
+	setlocale(LC_CTYPE, "Spanish"); //Para que muestre las interrogaciones y ñ en la pantalla
+	
+	printf("Bienvenido a:\n\n");
+	printf("QUIEN QUIERE APROBAR INFORMATICA\n\n");
+	printf("La reglas son las siguientes:\n");
+	printf("El jugador sera sometido a una serie de preguntas de diferentes modalidades y conocimientos basicos.\n");
+	printf("Cada respuesta correcta sumara dos puntos y cada respuesta incorrecta restara un punto.\n");
+	printf("Cada pregunta tendra un tiempo limite para contestar, si no fuese introducida la respuesta dentro del \n");
+	printf("tiempo limite establecido, la pregunta se anula y contaria como respuesta incorrecta.\n");
+	printf("Para optar al premio, las respuestas correctas deben de superar el 70%, en caso contrario el jugador no \n");
+	printf("obtendria una palmadita en la espalda y las gracias por participar.\n");
+	printf("QUE COMIENCEN LAS PREGUNTAS!\n\n");
+	
+	char caracter, puntuacion[50], nombre[100], apellido[100], nombrecompleto[150];
+	int resultado, resultado1, resultado2, i;
+	
+	printf("Introduzca su nombre: ");
+	gets(nombre);
+	printf("Introduzca su apellido: ");
+	gets(apellido);
+	strcpy(nombrecompleto, nombre);
+	
+	
+	printf("\nBienvenido %s ", nombrecompleto);
+	printf("\nPulse enter para continuar y que comiencen las preguntas\n\n");
+	scanf("%c", &caracter);
+	
