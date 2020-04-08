@@ -31,3 +31,4 @@ int main()
 	printf("\nPulse enter para continuar y que comiencen las preguntas\n\n");
 	scanf("%c", &caracter);
 	
+}
