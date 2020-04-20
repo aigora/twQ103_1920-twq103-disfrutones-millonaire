@@ -1,0 +1,15 @@
+BIENVENIDO A...
+¿QUIEN QUIERE APROBAR INFORMÁTICA?
+
+Esta programa tratará de retar al jugador/a que se atreva con una serie de preguntas de cultura general de diferentes temáticas y 
+con unos niveles de dificultad.
+El proceso es el siguiente:
+El jugador/a tendrá que introducir su nombre para registrarse en el juego. Ademas tendrá que seleccionar el nivel de las preguntas;
+para ello habrá tres niveles y cada nivel tendrá un número diferente de preguntas: fácil (25), medio (20) y difícil (15).
+Una vez elegida la dificultad de las preguntas, se iniciará el juego y se iniciarán las preguntas.
+Las preguntas no tienen tiempo limite de respuesta ya que no queremos más presión sobre el jugador, cada pregunta correcta sumará tres (3) 
+puntos al marcador y cada pregunta errónea, dependiendo del nivel de las preguntas, el marcador no se verá aterado en los niveles fácil y medio. 
+Sin embargo, en el nivel difícil, las preguntas falladas restarán un punto a la puntuación total que tenga el/la jugador/a. 
+Si la puntuación es nula y se falla una respuesta, el marcador podrá alcanzar una puntuación negativa.
+Al final del juego, según la puntuación que se haya obtenido, será otorgado un premio y además también se dará la opcion de ver las soluciones
+a todas las respuestas si se quiere, por si acaso ha surgido alguna duda o desacuerdo durante el juego.
