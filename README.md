@@ -1,5 +1,5 @@
 # Título del trabajo
-¿QUIEN QUIERE APROBAR INFORMÁTICA?
+DISFRUTONES MILLONAIRE.
 
 ## Integrantes del equipo
 
