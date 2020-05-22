@@ -85,9 +85,9 @@ int main()
 	FILE * pfichero3; 
 	FILE * pfichero4;
 	
-	setlocale(LC_CTYPE, "Spanish"); //Para que muestre las interrogaciones y Ò en la pantalla
+	setlocale(LC_CTYPE, "Spanish"); //Para que muestre las interrogaciones y √± en la pantalla
 	SetConsoleCP(1252);
-	SetConsoleOutputCP(1252); //Para que al introducir una Ò en una respuesta, el programa sea capaz de sacar por pantalla esa Ò
+	SetConsoleOutputCP(1252); //Para que al introducir una √± en una respuesta, el programa sea capaz de sacar por pantalla esa √±
 	
 	struct registro login[300];
 		
@@ -101,26 +101,22 @@ int main()
 	strcpy(login[300].nombrecompleto, login[100].nombre);
 	printf("Introduzca su numero de matricula: ");
 	scanf("%d", &login[100].nMatricula);
-	while (login[100].nMatricula >'A' && login[100].nMatricula < 'Z' && login[100].nMatricula > 'a' && login[100].nMatricula < 'z'){
-		printf("Porfavor introduzca un numero valido: ");
-		scanf("%d", &login[100].nMatricula);
-	}
 	printf("Introduzca su edad: ");
 	scanf("%d", &login[100].edad);
 	
 	if(login[100].edad<18){
-		printf("Al ser menor de edad le recomendamos que escoja entre el nivel f·cil o el nivel medio");
+		printf("Al ser menor de edad le recomendamos que escoja entre el nivel f√°cil o el nivel medio");
 	}
 	
 	
 	printf("\nBienvenido %s ", login[300].nombrecompleto);
 	
-	printf("øEs la primera vez que juega a este juego?\n1.SÌ\n2.No\nIntroduzca 1 (SÌ) Û 2 (No)\n");
+	printf("¬øEs la primera vez que juega a este juego?\n1.S√≠\n2.No\nIntroduzca 1 (S√≠) √≥ 2 (No)\n");
 	scanf("%d", &opcion1);
 	
 		while((opcion1!=1) && (opcion1!=2))
 		{
-			printf("Por favor, introduzca un digito v·lido.\n");
+			printf("Por favor, introduzca un digito v√°lido.\n");
 			scanf("%d", &opcion1);
 		}
 	
@@ -151,13 +147,13 @@ int main()
 				
 		case 2: 
 			system ("cls"); // Borra todo lo anterior
-				printf("øQuieres refrescar las reglas del juego?\n");
-				printf("1.SÌ\n2.No\nIntroduzca 1 (SÌ) Û 2 (No)\n");
+				printf("¬øQuieres refrescar las reglas del juego?\n");
+				printf("1.S√≠\n2.No\nIntroduzca 1 (S√≠) √≥ 2 (No)\n");
 				scanf("%d", &opcion2);
 				
 				while((opcion2!=1) && (opcion2!=2))
 				{
-					printf("Por favor, introduzca un digito v·lido.\n");
+					printf("Por favor, introduzca un digito v√°lido.\n");
 					scanf("%d", &opcion2);
 				}
 				
@@ -196,13 +192,13 @@ int main()
 	system("cls");
 	
 	printf("Muy bien %s, despues de leer las instrucciones del juego, es el momento de elegir el nivel de las preguntas.\n", login[300].nombrecompleto);
-	printf("1. F·cil\n2. Medio\n3. DifÌcil\n");
-	printf("Introduzca 1 (F·cil), 2 (Medio) Û 3 (DifÌcil):\n");
+	printf("1. F√°cil\n2. Medio\n3. Dif√≠cil\n");
+	printf("Introduzca 1 (F√°cil), 2 (Medio) √≥ 3 (Dif√≠cil):\n");
 	scanf("%d", &dificultad);
 	
 	while((dificultad!=1) && (dificultad!=2) && (dificultad!=3))
 	{
-		printf("Por favor, introduzca un digito v·lido.\n");
+		printf("Por favor, introduzca un digito v√°lido.\n");
 		scanf("%d", &dificultad);
 	}
 	
@@ -211,7 +207,7 @@ int main()
 		case 1:
 			{
 				char caracter200;
-				printf("Ha seleccionado el nivel f·cil. A continuacion responda las 25 preguntas que se le van a presentar.\n °°BUENA SUERTE!!\n");
+				printf("Ha seleccionado el nivel f√°cil. A continuacion responda las 25 preguntas que se le van a presentar.\n ¬°¬°BUENA SUERTE!!\n");
 				printf("\nPulse enter para continuar\n");	
 				scanf("%c", &caracter200);
 				scanf("%c", &caracter200);
@@ -392,8 +388,8 @@ int main()
 				
 				//Sexta pregunta
 				system ("cls");
-				char significado[400], significado1[400] = "Real academia espaÒola", significado3[400] = "REAL ACADEMIA ESPA—OLA";
-				char significado2[400] = "Real Academia EspaÒola", significado4[400] = "real academia espaÒola";
+				char significado[400], significado1[400] = "Real academia espa√±ola", significado3[400] = "REAL ACADEMIA ESPA√ëOLA";
+				char significado2[400] = "Real Academia Espa√±ola", significado4[400] = "real academia espa√±ola";
 				int resultado6, comparacion1, comparacion2, comparacion3, comparacion4;
 				char caracter6;
 				
@@ -939,8 +935,8 @@ int main()
 				
 				//Vigesimasegunda pregunta
 				system ("cls");
-				char significado13[200], significado14[100] = "Femur", significado15[100] = "FÈmur";
-				char significado16[100] = "fÈmur", significado40[100]="FEMUR", significado41[100]="F…MUR", significado69[100]="femur";
+				char significado13[200], significado14[100] = "Femur", significado15[100] = "F√©mur";
+				char significado16[100] = "f√©mur", significado40[100]="FEMUR", significado41[100]="F√âMUR", significado69[100]="femur";
 				int resultado22, comparacion12, comparacion13, comparacion14, comparacion50, comparacion51, comparacion69;
 				char caracter22;
 				
@@ -1009,8 +1005,8 @@ int main()
 				
 				//Vigesimacuarta pregunta
 				system ("cls");
-				char significado27[300], significado28[300] = "Murcielago", significado29[300] = "MurciÈlago";
-				char significado30[300] = "murcielago",significado31[300] = "murciÈlago", significado32[300]="MURCIELAGO", significado33[300]="MURCI…LAGO";
+				char significado27[300], significado28[300] = "Murcielago", significado29[300] = "Murci√©lago";
+				char significado30[300] = "murcielago",significado31[300] = "murci√©lago", significado32[300]="MURCIELAGO", significado33[300]="MURCI√âLAGO";
 				int resultado24, comparacion23, comparacion24, comparacion25, comparacion26, comparacion27, comparacion28;
 				char caracter24;
 				
@@ -1081,32 +1077,32 @@ int main()
 					system ("cls");
 					float porcentaje1;
 					porcentaje1 = (resultado25/75)*100;
-					printf("La puntuaciÛn total obtenida es de %d puntos\n\n", resultado25);
+					printf("La puntuaci√≥n total obtenida es de %d puntos\n\n", resultado25);
 					printf("\nHa acertado un %f % de las preguntas.\n\n", porcentaje1);
 					printf("\nGRACIAS POR PARTICIPAR %s.\nEsperamos verle de nuevo muy pronto.\n\n\n", login[300].nombrecompleto);
 					
 					if(porcentaje1<50)
 					{
-						printf("Lo siento mucho, no ha conseguido alcanzar el 50% de preguntas acertadas por lo que no le queda otro remedio que pagar otra matricula de inform·tica.");
+						printf("Lo siento mucho, no ha conseguido alcanzar el 50% de preguntas acertadas por lo que no le queda otro remedio que pagar otra matricula de inform√°tica.");
 						
 					} else if(50<=porcentaje1<80)
 							{
-								printf("Enhorabuena, puede ir recogiendo los 6 crÈditos de la asignatura de inform·tica, ha aprobado.");
+								printf("Enhorabuena, puede ir recogiendo los 6 cr√©ditos de la asignatura de inform√°tica, ha aprobado.");
 									
 							}else if(porcentaje1>=80)
 									{
-										printf("VAYA VAYA, HA CONSEGUIDO SUPERAR CON GRANDES RESULTADOS LAS PREGUNTAS, PUEDES ESTAR FELIZ, EN LOS PROXIMOS DIAS RECIBIR¡ UN SMS CON EL TÕTULO UNIVERSITARIO QUE LE CORRESPONDE.");
+										printf("VAYA VAYA, HA CONSEGUIDO SUPERAR CON GRANDES RESULTADOS LAS PREGUNTAS, PUEDES ESTAR FELIZ, EN LOS PROXIMOS DIAS RECIBIR√Å UN SMS CON EL T√çTULO UNIVERSITARIO QUE LE CORRESPONDE.");
 									}
 							
 						int duda1, y1;
 						char salto1;
 						printf("\n\nEn el caso de que te haya surgido alguna duda en las preguntas aqui tienes la opcion de ver las respuestas a todas las preguntas.\n");
-						printf("øTienes alguna duda respecto a alguna pregunta?\n1.SÌ\n2.No\nIntroduzca 1 (SÌ) Û 2 (No)\n");
+						printf("¬øTienes alguna duda respecto a alguna pregunta?\n1.S√≠\n2.No\nIntroduzca 1 (S√≠) √≥ 2 (No)\n");
 						scanf("%d", &duda1);
 		
 						while((duda1!=1) && (duda1!=2))
 						{
-							printf("Por favor, introduzca un digito v·lido.\n");
+							printf("Por favor, introduzca un digito v√°lido.\n");
 							scanf("%d", &duda1);
 						}
 					
@@ -1144,7 +1140,7 @@ int main()
 		case 2:
 			{
 				char caracter201;
-				printf("Ha seleccionado el nivel medio. A continuacion responda las 25 preguntas que se le van a presentar.\n °°BUENA SUERTE!!\n");
+				printf("Ha seleccionado el nivel medio. A continuacion responda las 25 preguntas que se le van a presentar.\n ¬°¬°BUENA SUERTE!!\n");
 				printf("\nPulse enter para continuar\n");	
 				scanf("%c", &caracter201);
 				scanf("%c", &caracter201);
@@ -1456,7 +1452,7 @@ int main()
 					
 					fflush(stdin);
 					
-				//UndÈcima pregunta
+				//Und√©cima pregunta
 				system("cls");
 				char respuesta61, caracter61;
 				int resultado61;
@@ -1491,7 +1487,7 @@ int main()
 				
 				fflush(stdin);
 
-			//DuodÈcima pregunta
+			//Duod√©cima pregunta
 				system("cls");
 				char respuesta62, caracter62;
 				int resultado62;
@@ -1768,7 +1764,7 @@ int main()
 				
 				fflush(stdin); 
 				
-				//VigÈsima pregunta				
+				//Vig√©sima pregunta				
 				system("cls");
 				char respuesta70, caracter70;
 				int resultado70;
@@ -1806,32 +1802,32 @@ int main()
 				
 				float porcentaje2;
 					porcentaje2 = (resultado70/60)*100;
-					printf("La puntuaciÛn total obtenida es de %d puntos\n\n", resultado70);
+					printf("La puntuaci√≥n total obtenida es de %d puntos\n\n", resultado70);
 					printf("\nHa acertado un %f% de las preguntas.\n\n", porcentaje2);
 					printf("\nGRACIAS POR PARTICIPAR %s.\nEsperamos verle de nuevo muy pronto.\n\n\n", login[300].nombrecompleto);
 					
 					if(porcentaje2<50)
 					{
-						printf("Lo siento mucho, no ha conseguido alcanzar el 50% de preguntas acertadas por lo que no le queda otro remedio que pagar otra matricula de inform·tica.");
+						printf("Lo siento mucho, no ha conseguido alcanzar el 50% de preguntas acertadas por lo que no le queda otro remedio que pagar otra matricula de inform√°tica.");
 						
 					}else if(50<=porcentaje2<80)
 							{
-								printf("Enhorabuena, puede ir recogiendo los 6 crÈditos de la asignatura de inform·tica, ha aprobado.");
+								printf("Enhorabuena, puede ir recogiendo los 6 cr√©ditos de la asignatura de inform√°tica, ha aprobado.");
 									
 							}else if(porcentaje2>=80)
 									{
-										printf("VAYA VAYA, HA CONSEGUIDO SUPERAR CON GRANDES RESULTADOS LAS PREGUNTAS, PUEDES ESTAR FELIZ, EN LOS PROXIMOS DIAS RECIBIR¡ UN SMS CON EL TÕTULO UNIVERSITARIO QUE LE CORRESPONDE.");
+										printf("VAYA VAYA, HA CONSEGUIDO SUPERAR CON GRANDES RESULTADOS LAS PREGUNTAS, PUEDES ESTAR FELIZ, EN LOS PROXIMOS DIAS RECIBIR√Å UN SMS CON EL T√çTULO UNIVERSITARIO QUE LE CORRESPONDE.");
 									}
 									
 						int duda2, y2;
 						char salto2;
 						printf("\n\nEn el caso de que te haya surgido alguna duda en las preguntas aqui tienes la opcion de ver las respuestas a todas las preguntas.\n");
-						printf("øTienes alguna duda respecto a alguna pregunta?\n1.SÌ\n2.No\nIntroduzca 1 (SÌ) Û 2 (No)\n");
+						printf("¬øTienes alguna duda respecto a alguna pregunta?\n1.S√≠\n2.No\nIntroduzca 1 (S√≠) √≥ 2 (No)\n");
 						scanf("%d", &duda2);
 		
 						while((duda2!=1) && (duda2!=2))
 						{
-							printf("Por favor, introduzca un digito v·lido.\n");
+							printf("Por favor, introduzca un digito v√°lido.\n");
 							scanf("%d", &duda2);
 						}
 					
@@ -1870,7 +1866,7 @@ int main()
 		case 3:
 			{
 				fflush(stdin);
-				printf("Eres una persona valiente.\nEstas preguntas son realmente complicadas.\n\n°°BUENA SUERTE!!\n");
+				printf("Eres una persona valiente.\nEstas preguntas son realmente complicadas.\n\n¬°¬°BUENA SUERTE!!\n");
 				printf("Pulsa enter para continuar.");
 				scanf("%c", &caracter);
 				
@@ -1886,7 +1882,7 @@ int main()
 					
 					while ((respuesta101 != 'a') && (respuesta101 != 'b') && (respuesta101 != 'c') && (respuesta101 != 'd') && (respuesta101 != 'A') && (respuesta101 != 'B') && (respuesta101 != 'C') && (respuesta101 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta101);		
 					}
 					
@@ -1894,16 +1890,16 @@ int main()
 					if ((respuesta101 =='B') || (respuesta101 =='b'))
 					{
 						resultado101 = resultado0 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");
 						printf("Congratulations, you are a real american.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado101);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado101);
 						
 					}
 					else
 					{
 						resultado101 = resultado0 ;
 						printf("\nRespuesta incorrecta.\n");
-						printf("La respuesta correcta era la opciÛn b, 45 presidentes.\n");
+						printf("La respuesta correcta era la opci√≥n b, 45 presidentes.\n");
 						printf("Bien intentado\n");
 						printf("\nPuntuacion: %d\n\n", resultado101);
 					}
@@ -1925,23 +1921,23 @@ int main()
 					
 					while ((respuesta102 != 'a') && (respuesta102 != 'b') && (respuesta102 != 'c') && (respuesta102 != 'd') && (respuesta102 != 'A') && (respuesta102 != 'B') && (respuesta102 != 'C') && (respuesta102 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta102);		
 					}
 					
 					if ((respuesta102 =='C') || (respuesta102 == 'c'))
 					{
 						resultado102 = resultado101 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("Parece que has estado ahÌ.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado102);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("Parece que has estado ah√≠.\n");
+						printf("\nPuntuaci√≥n: %d\n\n", resultado102);
 					}
 					else
 					{
 						resultado102 = resultado101 - 1;
 						printf("\nRespuesta incorrecta.\n");
-						printf("La respuesta era la C, La SantamarÌa.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado102);
+						printf("La respuesta era la C, La Santamar√≠a.\n");
+						printf("\nPuntuaci√≥n: %d\n\n", resultado102);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -1967,15 +1963,15 @@ int main()
 					if ((comparacion101 == 0) || (comparacion102 == 0) || (comparacion103 == 0))
 					{
 						resultado103 = resultado102 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");				
-						printf("\nPuntuaciÛn: %d\n\n", resultado103);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");				
+						printf("\nPuntuaci√≥n: %d\n\n", resultado103);
 					}
 					else if ((comparacion101 != 0) && (comparacion102 != 0) && (comparacion103 != 0))
 					{
 						printf("\nLa respuesta es incorrecta. La respuesta correcta es:\n");
 						resultado103 = resultado102 -1 ;
 						printf("El perro ladra, el gato maulla, el cuervo grazna y el elefante BARRITA.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado103);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado103);
 					}
 				
 					fflush(stdin);
@@ -1996,22 +1992,22 @@ int main()
 					
 					while ((respuesta104 != 'a') && (respuesta104 != 'b') && (respuesta104 != 'c') && (respuesta104 != 'd') && (respuesta104 != 'A') && (respuesta104 != 'B') && (respuesta104 != 'C') && (respuesta104 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta104);		
 					}
 					
 					if ((respuesta104 =='a') || (respuesta104 == 'A'))
 					{
 						resultado104 = resultado103 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado104);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado104);
 					}
 					else
 					{
 						resultado104 = resultado103 -1 ;
 						printf("\nRespuesta incorrecta.\n");
-						printf("El m·s grande es el OcÈano PacÌfico, con una superficie total de 165.700.000 km≤\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado104);
+						printf("El m√°s grande es el Oc√©ano Pac√≠fico, con una superficie total de 165.700.000 km¬≤\n");
+						printf("\nPuntuaci√≥n: %d\n\n", resultado104);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2031,22 +2027,22 @@ int main()
 					
 					while ((respuesta105 != 'a') && (respuesta105 != 'b') && (respuesta105 != 'c') && (respuesta105 != 'd') && (respuesta105 != 'A') && (respuesta105 != 'B') && (respuesta105 != 'C') && (respuesta105 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta105);		
 					}
 					
 					if ((respuesta105 =='b') || (respuesta105 == 'B'))
 					{
 						resultado105 = resultado104 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado105);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado105);
 					}
 					else
 					{
 						resultado105 = resultado104 - 1;
 						printf("\nRespuesta incorrecta.\n");
 						printf("La respuesta correcta es la B, de 1939 a 1945.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado105);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado105);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2066,22 +2062,22 @@ int main()
 				
 					while ((respuesta106 != 'a') && (respuesta106 != 'b') && (respuesta106 != 'c') && (respuesta106 != 'd') && (respuesta106 != 'A') && (respuesta106 != 'B') && (respuesta106 != 'C') && (respuesta106 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta106);		
 					}
 					
 					if ((respuesta106 =='b') || (respuesta106 == 'B'))
 					{
 						resultado106 = resultado105 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado106);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado106);
 					}
 					else
 					{
 						resultado106 = resultado105 - 1;
 						printf("\nRespuesta incorrecta.\n");
 						printf("La respuesta correcta es el COBRE.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado106);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado106);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2101,29 +2097,29 @@ int main()
 					
 					while ((respuesta107 != 'a') && (respuesta107 != 'b') && (respuesta107 != 'c') && (respuesta107 != 'd') && (respuesta107 != 'A') && (respuesta107 != 'B') && (respuesta107 != 'C') && (respuesta107 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta107);		
 					}
 						
 					if ((respuesta107 =='d') || (respuesta107 == 'D'))
 					{
 						resultado107 = resultado106 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado107);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado107);
 					}
 					else if ((respuesta107 == 'b') || (respuesta107 == 'B'))
 					{
 						resultado107 = resultado106 - 1;
 						printf("\nRespuesta incorrecta.\n");
-						printf("El murciÈlago es el ˙nico mamÌfero que puede volar.\n");
+						printf("El murci√©lago es el √∫nico mam√≠fero que puede volar.\n");
 						printf("La ardilla voladora no vuela realmente, solo abre sus alas para planear");
-						printf("\nPuntuaciÛn: %d\n\n", resultado107);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado107);
 					}else
 					{
 						resultado107 = resultado106 - 1;
 						printf("\nRespuesta incorrecta.\n");
-						printf("El murciÈlago es el ˙nico mamÌfero que puede volar.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado107);
+						printf("El murci√©lago es el √∫nico mam√≠fero que puede volar.\n");
+						printf("\nPuntuaci√≥n: %d\n\n", resultado107);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2143,22 +2139,22 @@ int main()
 					
 					while ((respuesta108 != 'a') && (respuesta108 != 'b') && (respuesta108 != 'c') && (respuesta108 != 'd') && (respuesta108 != 'A') && (respuesta108 != 'B') && (respuesta108 != 'C') && (respuesta108 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta108);		
 					}
 						
 					if ((respuesta108 =='D') || (respuesta108 == 'd'))
 					{
 						resultado108 = resultado107 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado108);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado108);
 					}
 					else
 					{
 						resultado108 = resultado107 - 1;
 						printf("\nRespuesta incorrecta.\n");
-						printf("El m·s caro es el RODIO.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado108);
+						printf("El m√°s caro es el RODIO.\n");
+						printf("\nPuntuaci√≥n: %d\n\n", resultado108);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2178,22 +2174,22 @@ int main()
 					
 					while ((respuesta109 != 'a') && (respuesta109 != 'b') && (respuesta109 != 'c') && (respuesta109 != 'd') && (respuesta109 != 'A') && (respuesta109 != 'B') && (respuesta109 != 'C') && (respuesta109 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta109);		
 					}
 						
 					if ((respuesta109 =='c') || (respuesta109 == 'C'))
 					{
 						resultado109 = resultado108 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado109);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado109);
 					}
 					else
 					{
 						resultado109 = resultado108 - 1;
 						printf("\nRespuesta incorrecta.\n");
 						printf("Blancanieves y los siete enanitos.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado109);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado109);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2213,22 +2209,22 @@ int main()
 					
 					while ((respuesta110 != 'a') && (respuesta110 != 'b') && (respuesta110 != 'c') && (respuesta110 != 'd') && (respuesta110 != 'A') && (respuesta110 != 'B') && (respuesta110 != 'C') && (respuesta110 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta110);		
 					}
 						
 					if ((respuesta110 =='A') || (respuesta110 == 'a'))
 					{
 						resultado110 = resultado109 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado110);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado110);
 					}
 					else
 					{
 						resultado110 = resultado109 - 1;
 						printf("\nRespuesta incorrecta.\n");
-						printf("La perra Laika fue la primera en ponerse en Ûrbita.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado110);
+						printf("La perra Laika fue la primera en ponerse en √≥rbita.\n");
+						printf("\nPuntuaci√≥n: %d\n\n", resultado110);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2248,7 +2244,7 @@ int main()
 					
 					while ((respuesta111 != 'a') && (respuesta111 != 'b') && (respuesta111 != 'c') && (respuesta111 != 'd') && (respuesta111 != 'A') && (respuesta111 != 'B') && (respuesta111 != 'C') && (respuesta111 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta111);		
 					}
 					
@@ -2256,15 +2252,15 @@ int main()
 					if ((respuesta111 =='c') || (respuesta111 == 'C'))
 					{
 						resultado111 = resultado110 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado111);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado111);
 					}
 					else
 					{
 						resultado111 = resultado110 - 1;
 						printf("\nRespuesta incorrecta.\n");
 						printf("La C, pi = 3.14159265358979323846\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado111);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado111);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2284,7 +2280,7 @@ int main()
 					
 					while ((respuesta112 != 'a') && (respuesta112 != 'b') && (respuesta112 != 'c') && (respuesta112 != 'd') && (respuesta112 != 'A') && (respuesta112 != 'B') && (respuesta112 != 'C') && (respuesta112 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta112);		
 					}
 					
@@ -2292,15 +2288,15 @@ int main()
 					if ((respuesta112 =='c') || (respuesta112 == 'C'))
 					{
 						resultado112 = resultado111 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado112);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado112);
 					}
 					else
 					{
 						resultado112 = resultado111 - 1;
 						printf("\nRespuesta incorrecta.\n");
 						printf("El 2.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado112);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado112);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2320,7 +2316,7 @@ int main()
 					
 					while ((respuesta113 != 'a') && (respuesta113 != 'b') && (respuesta113 != 'c') && (respuesta113 != 'd') && (respuesta113 != 'A') && (respuesta113 != 'B') && (respuesta113 != 'C') && (respuesta113 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta113);		
 					}
 					
@@ -2328,15 +2324,15 @@ int main()
 					if ((respuesta113 =='b') || (respuesta113 == 'B'))
 					{
 						resultado113 = resultado112 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado113);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado113);
 					}
 					else
 					{
 						resultado113 = resultado112 - 1;
 						printf("\nRespuesta incorrecta.\n");
 						printf("Naranjas.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado113);
+						printf("\nPuntuaci√≥n: %d\n\n", resultado113);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2356,7 +2352,7 @@ int main()
 					
 					while ((respuesta114 != 'a') && (respuesta114 != 'b') && (respuesta114 != 'c') && (respuesta114 != 'd') && (respuesta114 != 'A') && (respuesta114 != 'B') && (respuesta114 != 'C') && (respuesta114 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta114);		
 					}
 					
@@ -2364,15 +2360,15 @@ int main()
 					if ((respuesta114 =='c') || (respuesta114 == 'C'))
 					{
 						resultado114 = resultado113 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado114);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado114);
 					}
 					else
 					{
 						resultado114 = resultado113 - 1;
 						printf("\nRespuesta incorrecta.\n");
-						printf("DurÛ 116 aÒos.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado114);
+						printf("Dur√≥ 116 a√±os.\n");
+						printf("\nPuntuaci√≥n: %d\n\n", resultado114);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2392,7 +2388,7 @@ int main()
 					
 					while ((respuesta115 != 'a') && (respuesta115 != 'b') && (respuesta115 != 'c') && (respuesta115 != 'd') && (respuesta115 != 'A') && (respuesta115 != 'B') && (respuesta115 != 'C') && (respuesta115 != 'D'))
 					{
-						printf("Por favor, introduzca una letra v·lida: ");
+						printf("Por favor, introduzca una letra v√°lida: ");
 						scanf("%c", &respuesta115);		
 					}
 					
@@ -2400,15 +2396,15 @@ int main()
 					if ((respuesta115 =='b') || (respuesta115 == 'B'))
 					{
 						resultado115 = resultado114 + 3;
-						printf("\n°°RESPUESTA CORRECTA!!\n");		
-						printf("\nPuntuaciÛn: %d\n\n", resultado115);
+						printf("\n¬°¬°RESPUESTA CORRECTA!!\n");		
+						printf("\nPuntuaci√≥n: %d\n\n", resultado115);
 					}
 					else
 					{
 						resultado115 = resultado114 - 1;
 						printf("\nRespuesta incorrecta.\n");
-						printf("En los seres humanos hay 24 vÈrtebras durante la etapa adulta.\n");
-						printf("\nPuntuaciÛn: %d\n\n", resultado115);
+						printf("En los seres humanos hay 24 v√©rtebras durante la etapa adulta.\n");
+						printf("\nPuntuaci√≥n: %d\n\n", resultado115);
 					}
 					
 					printf("\nPulse enter para continuar\n");	
@@ -2420,30 +2416,30 @@ int main()
 					
 					float porcentaje3;
 					porcentaje3 = (resultado115/45.0)*100;
-					printf("La puntuaciÛn total obtenida es de %d puntos\n\n", resultado115);
+					printf("La puntuaci√≥n total obtenida es de %d puntos\n\n", resultado115);
 					printf("\nHa acertado un %0.2f de las preguntas.\n\n", porcentaje3);
 					printf("\nGRACIAS POR PARTICIPAR %s.\nEsperamos verle de nuevo muy pronto.\n\n\n", login[300].nombrecompleto);
 					
 					if(porcentaje3<50)
 					{
-						printf("Lo siento mucho, no ha conseguido alcanzar el 50 por ciento de preguntas acertadas por lo que no le queda otro remedio que pagar otra matricula de inform·tica.\n");
+						printf("Lo siento mucho, no ha conseguido alcanzar el 50 por ciento de preguntas acertadas por lo que no le queda otro remedio que pagar otra matricula de inform√°tica.\n");
 					}else if(50<=porcentaje3 && porcentaje3<80)
 							{
-								printf("Enhorabuena, puede ir recogiendo los 6 crÈditos de la asignatura de inform·tica, ha aprobado.\n");
+								printf("Enhorabuena, puede ir recogiendo los 6 cr√©ditos de la asignatura de inform√°tica, ha aprobado.\n");
 							}else if(porcentaje3>=80)
 									{
-										printf("VAYA VAYA, HA CONSEGUIDO SUPERAR CON GRANDES RESULTADOS LAS PREGUNTAS, PUEDES ESTAR FELIZ, EN LOS PROXIMOS DIAS RECIBIR¡ UN SMS CON EL TÕTULO UNIVERSITARIO QUE LE CORRESPONDE.\n");
+										printf("VAYA VAYA, HA CONSEGUIDO SUPERAR CON GRANDES RESULTADOS LAS PREGUNTAS, PUEDES ESTAR FELIZ, EN LOS PROXIMOS DIAS RECIBIR√Å UN SMS CON EL T√çTULO UNIVERSITARIO QUE LE CORRESPONDE.\n");
 									}
 														
 						int duda3, y3;
 						char salto3;
 						printf("En el caso de que te haya surgido alguna duda en las preguntas aqui tienes la opcion de ver las respuestas a todas las preguntas.\n");
-						printf("øTienes alguna duda respecto a alguna pregunta?\n1.SÌ\n2.No\nIntroduzca 1 (SÌ) Û 2 (No)\n");
+						printf("¬øTienes alguna duda respecto a alguna pregunta?\n1.S√≠\n2.No\nIntroduzca 1 (S√≠) √≥ 2 (No)\n");
 						scanf("%d", &duda3);
 		
 						while((duda3!=1) && (duda3!=2))
 						{
-							printf("Por favor, introduzca un digito v·lido.\n");
+							printf("Por favor, introduzca un digito v√°lido.\n");
 							scanf("%d", &duda3);
 						}
 					
@@ -2484,7 +2480,7 @@ int main()
 
 	void pregunta1(){
 				
-				printf("\n1) øPor donde pasa el meridiano de Greenwich?\n");
+				printf("\n1) ¬øPor donde pasa el meridiano de Greenwich?\n");
 				printf("A: Hong Kong       ");
 				printf("B: Andorra\n"); 
 				printf("C: Londres         "); //Esta es la correcta
@@ -2495,7 +2491,7 @@ int main()
 			
 			void pregunta2(){
 				
-				printf("\n2) øQue animal era considerado sagrado en la cultura egipica\n");
+				printf("\n2) ¬øQue animal era considerado sagrado en la cultura egipica\n");
 				printf("A: Cucaracha          ");
 				printf("B: Langosta\n"); 
 				printf("C: Escarabajo         "); //Esta es la correcta
@@ -2505,7 +2501,7 @@ int main()
 			}
 			void pregunta3(){
 				
-				printf("\n3) øEn que aÒo se aprobo la actual constitucion espaÒola?\n");
+				printf("\n3) ¬øEn que a√±o se aprobo la actual constitucion espa√±ola?\n");
 				printf("A: 2009         ");
 				printf("B: 1976\n"); 
 				printf("C: 1789         "); 
@@ -2516,7 +2512,7 @@ int main()
 			
 			void pregunta4(){
 					
-				printf("\n4) øQuien escribio Romeo y Julieta?\n");
+				printf("\n4) ¬øQuien escribio Romeo y Julieta?\n");
 				printf("A: Edgar Allan Poe            ");
 				printf("B: William Shakespeare\n"); //Esta es la correcta
 				printf("C: Miguel de Cervantes        "); 
@@ -2527,7 +2523,7 @@ int main()
 			
 			void pregunta5(){
 				
-				printf("\n5) øQuien fue el creador de Facebook?\n");
+				printf("\n5) ¬øQuien fue el creador de Facebook?\n");
 				printf("A: Amancio Ortega     ");
 				printf("B: Cristiano Ronaldo\n"); 
 				printf("C: Mark Zuckerberg    "); //Esta es la correcta
@@ -2544,7 +2540,7 @@ int main()
 			
 			void pregunta7(){
 				
-				printf("\n7) øA que se dedicaba Frida Khalo?\n");
+				printf("\n7) ¬øA que se dedicaba Frida Khalo?\n");
 				printf("A: Pintora       ");//Esta es la correcta
 				printf("B: Cantante\n"); 
 				printf("C: Matematica    "); 
@@ -2555,7 +2551,7 @@ int main()
 			
 			void pregunta8(){
 				
-				printf("\n8) øCuanto vale la raiz cuadrada de 169?\n");
+				printf("\n8) ¬øCuanto vale la raiz cuadrada de 169?\n");
 				printf("A: 13    ");//Esta es la correcta
 				printf("B: 17\n"); 
 				printf("C: 14    "); 
@@ -2566,7 +2562,7 @@ int main()
 			
 			void pregunta9(){
 			
-				printf("\n9) øCual de estas carreras tiene la nota de corte mas alta en la UCM?\n");
+				printf("\n9) ¬øCual de estas carreras tiene la nota de corte mas alta en la UCM?\n");
 				printf("A: Magisterio ");
 				printf("B: Farmacia\n"); 
 				printf("C: Derecho    "); 
@@ -2577,7 +2573,7 @@ int main()
 			
 			void pregunta10(){
 			
-				printf("\n10) øCual es el pais con mas habitantes del mundo?\n");
+				printf("\n10) ¬øCual es el pais con mas habitantes del mundo?\n");
 				printf("A: EEUU       ");
 				printf("B: India\n"); 
 				printf("C: Rusia      "); 
@@ -2588,7 +2584,7 @@ int main()
 			
 			void pregunta11(){
 				
-				printf("\n11) øQuien fue el inventor de la bombilla\n");
+				printf("\n11) ¬øQuien fue el inventor de la bombilla\n");
 				printf("A: Isaac Newton     ");
 				printf("B: Alexander fleming\n"); 
 				printf("C: Albert Einstein  "); 
@@ -2599,13 +2595,13 @@ int main()
 			
 			void pregunta12(){
 				
-				printf("12) øCual es la capital de Finlandia?\n");
+				printf("12) ¬øCual es la capital de Finlandia?\n");
 				printf("Escriba su respuesta: ");
 			}
 			
 			void pregunta13(){
 				
-				printf("\n13) øEn que aÒo se descubrio America?\n");
+				printf("\n13) ¬øEn que a√±o se descubrio America?\n");
 				printf("A: 1212     ");
 				printf("B: 1492\n"); //Esta es la correcta
 				printf("C: 1914     "); 
@@ -2616,7 +2612,7 @@ int main()
 			
 			void pregunta14(){
 				
-				printf("\n14) øA que se dedica elrubius\n");
+				printf("\n14) ¬øA que se dedica elrubius\n");
 				printf("A: Bailarin  ");
 				printf("B: Politico\n"); 
 				printf("C: Youtuber  "); //Esta es la correcta
@@ -2627,7 +2623,7 @@ int main()
 			
 			void pregunta15(){
 				
-				printf("\n15) øQue alimento tiene mas vitamina C?\n");
+				printf("\n15) ¬øQue alimento tiene mas vitamina C?\n");
 				printf("A: Pepino   ");
 				printf("B: Tomate\n"); 
 				printf("C: Naranja  "); //Esta es la correcta
@@ -2638,7 +2634,7 @@ int main()
 			
 			void pregunta16(){
 				
-				printf("\n16) øEn que region se dio el primer caso de COVID-19?\n");
+				printf("\n16) ¬øEn que region se dio el primer caso de COVID-19?\n");
 				printf("A: Wuhan   ");//Esta es la correcta
 				printf("B: Nueva Delhi\n"); 
 				printf("C: Seul    "); 
@@ -2649,7 +2645,7 @@ int main()
 			
 			void pregunta17(){
 				
-				printf("\n17) øEn que pueblo nacio Andres Iniesta? \n");
+				printf("\n17) ¬øEn que pueblo nacio Andres Iniesta? \n");
 				printf("A: Valdestillas     ");
 				printf("B: Fuentenebro\n"); 
 				printf("C: Puenteduero      "); 
@@ -2660,7 +2656,7 @@ int main()
 			
 			void pregunta18(){
 				
-				printf("\n18) øCon que utensilios se juega al badminton?\n");
+				printf("\n18) ¬øCon que utensilios se juega al badminton?\n");
 				printf("A: Raqueta y pelota     ");
 				printf("B: Pala y balon\n"); 
 				printf("C: Pala y volante       "); 
@@ -2671,7 +2667,7 @@ int main()
 			
 			void pregunta19(){
 				
-				printf("\n19) øEn informatica cual es el comando para pedir al usuario que escriba en un fichero de Cev++?\n");
+				printf("\n19) ¬øEn informatica cual es el comando para pedir al usuario que escriba en un fichero de Cev++?\n");
 				printf("A: scanf    ");
 				printf("B: fprintf\n"); 
 				printf("C: fscanf   "); //Esta es la correcta
@@ -2682,7 +2678,7 @@ int main()
 			
 			void pregunta20(){
 				
-				printf("\n20) øCual es el numero para emergencias en EspaÒa?\n");
+				printf("\n20) ¬øCual es el numero para emergencias en Espa√±a?\n");
 				printf("A: 096     ");
 				printf("B: 012\n"); 
 				printf("C: 112     "); //Esta es la correcta
@@ -2693,19 +2689,19 @@ int main()
 			
 			void pregunta21(){
 				
-				printf("21) øCual es la capital de Polonia?\n");
+				printf("21) ¬øCual es la capital de Polonia?\n");
 				printf("Escriba su respuesta: ");
 			}
 			
 			void pregunta22(){
 				
-				printf("22) øCual es el hueso mas largo del cuerpo?\n");
+				printf("22) ¬øCual es el hueso mas largo del cuerpo?\n");
 				printf("Escriba su respuesta: ");
 			}
 			
 			void pregunta23(){
 				
-				printf("23) øQue significan las siglas OVNI?\n");
+				printf("23) ¬øQue significan las siglas OVNI?\n");
 				printf("Escriba su respuesta: ");
 			}
 			
@@ -2717,7 +2713,7 @@ int main()
 			
 			void pregunta25(){
 				
-				printf("\n25) øCual es el dia internacional de la mujer?\n");
+				printf("\n25) ¬øCual es el dia internacional de la mujer?\n");
 				printf("A: 8M    ");//Esta es la correcta
 				printf("B: 15M\n"); 
 				printf("C: 23F   "); 
@@ -2727,29 +2723,29 @@ int main()
 			}
 			
 				void pregunta51(){
-				printf("1) øQuien fue el primer presidente de la democracia espaÒola tras el franquismo?\n");
-				printf("A: Adolfo Su·rez       ");//Esta es la correcta
+				printf("1) ¬øQuien fue el primer presidente de la democracia espa√±ola tras el franquismo?\n");
+				printf("A: Adolfo Su√°rez       ");//Esta es la correcta
 				printf("B: Juan Carlos I\n"); 
-				printf("C: Felipe Gonz·lez     "); 
-				printf("D: JosÈ MarÌa Aznar\n");
+				printf("C: Felipe Gonz√°lez     "); 
+				printf("D: Jos√© Mar√≠a Aznar\n");
 				
 			}
 			void pregunta52(){
-				printf("2) øEn que obra de Shakespeare se dijo:'ser o no ser, esa es la cuestiÛn'\n");
+				printf("2) ¬øEn que obra de Shakespeare se dijo:'ser o no ser, esa es la cuesti√≥n'\n");
 				printf("A: Romeo y julieta  ");//Esta es la correcta
 				printf("B: Hamlet\n"); 
 				printf("C: Sherlock Holmes  "); 
 				printf("D: Macbeth\n");
 			}
 			void pregunta53(){
-				printf("3) øLa fÛrmula: E=mc^2, en que teorÌa cientÌfica aparece?\n");
+				printf("3) ¬øLa f√≥rmula: E=mc^2, en que teor√≠a cient√≠fica aparece?\n");
 				printf("A: En la teoria de Hitchcock      ");
 				printf("B: En la  teoria de Galileo\n"); 
 				printf("C: En la teoria de Einstein       "); //Esta es la correcta
 				printf("D: En la teoria de Newton\n");
 			}
 			void pregunta54(){
-				printf("4) øCual es el nombre tÈcnico de tener miedo a las alturas?\n");
+				printf("4) ¬øCual es el nombre t√©cnico de tener miedo a las alturas?\n");
 				printf("A: Aracnofobia       ");
 				printf("B: Claustrofobia\n"); 
 				printf("C: Agorafobia        "); 
@@ -2757,42 +2753,42 @@ int main()
 				
 			}
 			void pregunta55(){
-				printf("5) øQue nombre recibe el estadio de f˙tbol del Club Deportivo AlavÈs?\n");
+				printf("5) ¬øQue nombre recibe el estadio de f√∫tbol del Club Deportivo Alav√©s?\n");
 				printf("A: Son Moix              ");
-				printf("B: Ipur˙a\n"); 
-				printf("C: Santiago BernabÈu     "); 
+				printf("B: Ipur√∫a\n"); 
+				printf("C: Santiago Bernab√©u     "); 
 				printf("D: Mendizorroza\n");//Esta es la correcta
 			}
 			void pregunta56(){
-				printf("6) øEn que aÒo ocurrieron los atentados del 11S en Estados Unidos?\n");
+				printf("6) ¬øEn que a√±o ocurrieron los atentados del 11S en Estados Unidos?\n");
 				printf("A: 2000     ");
 				printf("B: 1999\n"); 
 				printf("C: 2006     "); 
 				printf("D: 2001\n");//Esta es la correcta
 			}
 			void pregunta57(){
-				printf("7) øQuÈ gran artista es conocido por su obra: 'La capilla sixtina'?\n");
+				printf("7) ¬øQu√© gran artista es conocido por su obra: 'La capilla sixtina'?\n");
 				printf("A: Tiziano Vecellio      ");
-				printf("B: Miguel ¡ngel\n"); //Esta es la correcta
+				printf("B: Miguel √Ångel\n"); //Esta es la correcta
 				printf("C: Leonardo Da Vinci     "); 
-				printf("D: Salvador DalÌ\n");
+				printf("D: Salvador Dal√≠\n");
 			}
 			void pregunta58(){
-				printf("8) øCual es la lengua m·s hablada en el mundo?\n");
-				printf("A: InglÈs      ");
-				printf("B: EspaÒol\n"); 
+				printf("8) ¬øCual es la lengua m√°s hablada en el mundo?\n");
+				printf("A: Ingl√©s      ");
+				printf("B: Espa√±ol\n"); 
 				printf("C: Chino       "); //Esta es la correcta
 				printf("D: Ruso\n");
 			}
 			void pregunta59(){
-				printf("9) øCu·l era el lema de los tres mosqueteros?\n");
+				printf("9) ¬øCu√°l era el lema de los tres mosqueteros?\n");
 				printf("A: Fuenteovejuna, todos a una!!            ");
 				printf("B: Todos para uno y vamos a por ellos!!\n"); 
 				printf("C: Todos para uno y uno para ellos!!       "); 
 				printf("D: Todos para uno y uno para todos!!\n");//Esta es la correcta
 			}
 			void pregunta60(){
-				printf("10) øDe que famosa marca de coches es el conocido spot: 'øte gusta conducir?'?\n");
+				printf("10) ¬øDe que famosa marca de coches es el conocido spot: '¬øte gusta conducir?'?\n");
 				printf("A: Ferrari   ");
 				printf("B: Audi\n"); 
 				printf("C: BMW       "); 
@@ -2800,129 +2796,129 @@ int main()
 			}
 			void pregunta61(){
 				
-				printf("\n11) øQuÈ cantidad de huesos en el cuerpo humano?\n");
+				printf("\n11) ¬øQu√© cantidad de huesos en el cuerpo humano?\n");
 				printf("A: 200         ");
 				printf("B: 206\n"); //Esta es la correcta
 				printf("C: 187         "); 
 				printf("D: 300\n");
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");
 			}
 			
 			void pregunta62(){
 				
-				printf("\n12) øCuantos sabores primarios existen?\n");
-				printf("A: 5, DULCE, SALADO, UMAMI, ¡CIDO Y AMARGO        ");// ESTA ES LA CORRECTA
-				printf("B: 4, DULCE, SALADO, ¡CIDO Y AMARGO\n"); 
-				printf("C: 5, DULCE, SALADO, ¡CIDO, AMARGO Y GRASO        "); 
+				printf("\n12) ¬øCuantos sabores primarios existen?\n");
+				printf("A: 5, DULCE, SALADO, UMAMI, √ÅCIDO Y AMARGO        ");// ESTA ES LA CORRECTA
+				printf("B: 4, DULCE, SALADO, √ÅCIDO Y AMARGO\n"); 
+				printf("C: 5, DULCE, SALADO, √ÅCIDO, AMARGO Y GRASO        "); 
 				printf("D: 3, DULCE, SALADO, Y AMARGO\n");
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");
 			}
 			void pregunta63(){
 				
-				printf("\n13) øCual es el rio mas largo del mundo?\n");
+				printf("\n13) ¬øCual es el rio mas largo del mundo?\n");
 				printf("A: EBRO       ");
 				printf("B: PO\n"); 
 				printf("C: NILO       "); 
 				printf("D: AMAZONAS\n");//Esta es la correcta
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");
 			}
 			
 			void pregunta64(){
 					
-				printf("\n14) øCual es la naciÛn m·s pequeÒa del mundo?\n");
+				printf("\n14) ¬øCual es la naci√≥n m√°s peque√±a del mundo?\n");
 				printf("A: Malta            ");
 				printf("B: Luxemburgo\n");
 				printf("C: Linchestein      "); 
 				printf("D: El Vaticano\n"); //Esta es la correcta
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");
 			}
 			
 			void pregunta65(){
 				
-				printf("\n15) øA quÈ se denomina el sÈptimo arte?\n");
+				printf("\n15) ¬øA qu√© se denomina el s√©ptimo arte?\n");
 				printf("A: Teatro     ");
 				printf("B: Pintura\n"); 
 				printf("C: Cine    "); //Esta es la correcta
 				printf("D: Escritura\n");
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");
 			}
 			
 			void pregunta66(){
 				
-				printf("\n16) øCual es la obra m·s importante en la literatura espaÒola?\n");
+				printf("\n16) ¬øCual es la obra m√°s importante en la literatura espa√±ola?\n");
 				printf("A: Fuenteovejuna     ");
 				printf("B: Don Quijote de la mancha\n"); //Esta es la correcta
 				printf("C: Luces de Bohemia    "); 
 				printf("D: La Casa de Bernarda Alba\n");
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");
 				
 			}
 			
 			void pregunta67(){
-				printf("17) øCuantos corazones tienen los pulpos?\n");
+				printf("17) ¬øCuantos corazones tienen los pulpos?\n");
 				printf("Teclee su respuesta: ");
 				
 			}
 			
 			void pregunta68(){
 				
-				printf("\n18)øEn que aÒo se celbraron los Juegos OlÌmpicos en EspaÒa?\n");
+				printf("\n18)¬øEn que a√±o se celbraron los Juegos Ol√≠mpicos en Espa√±a?\n");
 				printf("A: 1992    ");//Esta es la correcta
 				printf("B: 2002\n"); 
 				printf("C: 1993    "); 
 				printf("D: 1982\n");
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");
 			}
 			
 			void pregunta69(){
 			
-				printf("\n19) øCu·l es el record mundial de apnea est·tica?");
+				printf("\n19) ¬øCu√°l es el record mundial de apnea est√°tica?");
 				printf("(Aguantar el mayor tiempo posible bajo el agua\n)");
 				printf("A: 18 minutos 56 segundos    ");
 				printf("B: 13 minutos 31 segundos\n"); 
 				printf("C: 13 minutos 43 segundos    "); 
 				printf("D: 24 minutos 3  segundos\n");//Esta es la correcta
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");	
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");	
 			}
 			
 			void pregunta70(){
 			
-				printf("\n20) øQuÈ nombre recibio la mascota del mundial de 1982?\n");
+				printf("\n20) ¬øQu√© nombre recibio la mascota del mundial de 1982?\n");
 				printf("A: Cobi       ");
 				printf("B: Indi\n"); 
 				printf("C: Rojito     "); 
 				printf("D: Naranjito\n");//Esta es la correcta
 				
-				printf("Introduzca la letra que considere la opciÛn corrrecta:\n");	
+				printf("Introduzca la letra que considere la opci√≥n corrrecta:\n");	
 			}
 			
 			
 			void pregunta101(){
-				printf("\n1) øCuantos presidentes ha tenido Estados Unidos en toda su historia?\n");
+				printf("\n1) ¬øCuantos presidentes ha tenido Estados Unidos en toda su historia?\n");
 				printf("A: 35       ");
 				printf("B: 45\n"); //Esta es la correcta
 				printf("C: 28       ");
 				printf("D: 39\n");
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta102(){
-				printf("\n2) øEn el viaje de vuelta de America de Colon, cual fue el barco que no regresÛ?\n");
+				printf("\n2) ¬øEn el viaje de vuelta de America de Colon, cual fue el barco que no regres√≥?\n");
 				printf("A:LA PINTA             ");
-				printf("B:LA NI—A\n"); 
+				printf("B:LA NI√ëA\n"); 
 				printf("C:LA SANTAMARIA        ");  //Esta es la correcta
 				printf("D:NINGUNA ES CORRECTA\n");
 			
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta103(){
@@ -2931,121 +2927,121 @@ int main()
 			}
 			
 			void pregunta104(){
-				printf("\n4) øCu·l es el ocÈano m·s grande? \n");
-				printf("A:PACÕFICO            "); //Esta es la correcta
-				printf("B:ATL¡NTICO\n"); 
-				printf("C:ÕNDICO              ");  
-				printf("D:ANT¡RTICO\n");
+				printf("\n4) ¬øCu√°l es el oc√©ano m√°s grande? \n");
+				printf("A:PAC√çFICO            "); //Esta es la correcta
+				printf("B:ATL√ÅNTICO\n"); 
+				printf("C:√çNDICO              ");  
+				printf("D:ANT√ÅRTICO\n");
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta105(){
-				printf("\n5) øEn quÈ aÒo comenzÛ y terminÛ la II Guerra Mundial? \n");
+				printf("\n5) ¬øEn qu√© a√±o comenz√≥ y termin√≥ la II Guerra Mundial? \n");
 				printf("A:1940 y 1948            "); 
 				printf("B:1939 y 1945\n"); //Esta es la correcta
 				printf("C:1938 y 1944            ");  
 				printf("D:1937 y 1942\n");
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta106(){
-				printf("\n6) øCu·l fue el primer metal que empleÛ el hombre? \n");
+				printf("\n6) ¬øCu√°l fue el primer metal que emple√≥ el hombre? \n");
 				printf("A:BRONCE           "); 
 				printf("B:COBRE\n"); //Esta es la correcta
 				printf("C:HIERRO          ");  
 				printf("D:ACERO\n");
 			
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta107(){
-				printf("\n7) øCu·l es el ˙nico mamÌfero capaz de volar? \n");
-				printf("A:PING‹INO           "); 
+				printf("\n7) ¬øCu√°l es el √∫nico mam√≠fero capaz de volar? \n");
+				printf("A:PING√úINO           "); 
 				printf("B:ARDILLA VOLADORA\n"); 
 				printf("C:AVESTRUZ           ");  
-				printf("D:MURCI…LAGO\n"); //Esta es la correcta
+				printf("D:MURCI√âLAGO\n"); //Esta es la correcta
 			
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta108(){
-				printf("\n8) øC˙al es el elemento m·s caro de la tabla periÛdica? \n");
+				printf("\n8) ¬øC√∫al es el elemento m√°s caro de la tabla peri√≥dica? \n");
 				printf("A:ORO             "); 
 				printf("B:PLATINO\n"); 
 				printf("C:CESIO           ");  
 				printf("D:RODIO\n"); //Esta es la correcta
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta109(){
-				printf("\n9) øC˙al fue la primera pelÌcula de Walt Disney? \n");
+				printf("\n9) ¬øC√∫al fue la primera pel√≠cula de Walt Disney? \n");
 				printf("A:Mickey Mouse                        "); 
 				printf("B:Cenicienta\n"); 
 				printf("C:Blancanieves y los siete enanitos   ");  //Esta es la correcta
 				printf("D:La bella y la bestia\n"); 
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta110(){
-				printf("\n10) øCu·l fue el primer ser/es vivo/s en viajar al espacio y ponerse en orbita?\n");
+				printf("\n10) ¬øCu√°l fue el primer ser/es vivo/s en viajar al espacio y ponerse en orbita?\n");
 				printf("A:PERRA, LAIKA            "); //Esta es la correcta
 				printf("B:PERROS, TSYGAN Y DEZIK\n"); 
-				printf("C:RAT”N                   ");  
+				printf("C:RAT√ìN                   ");  
 				printf("D:MONOS, ABLE Y BAKER   \n"); 
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			 }
 			
 			void pregunta111(){
-				printf("\n11) øA cu·nto equivale el numero Pi?\n"); //3.14159265358979323846
+				printf("\n11) ¬øA cu√°nto equivale el numero Pi?\n"); //3.14159265358979323846
 				printf("A:3.1417826            "); 
 				printf("B:3.1416926\n"); 
 				printf("C:3.1415926            ");  //Esta es la correcta
 				printf("D:3.1395126\n"); 
 			
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta112(){
-				printf("\n12) øCu·l es el primero de los n˙meros primos? \n");
+				printf("\n12) ¬øCu√°l es el primero de los n√∫meros primos? \n");
 				printf("A:0          "); 
 				printf("B:1\n"); 
 				printf("C:2          "); //Esta es la correcta 
 				printf("D:3\n"); 
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta113(){
-				printf("\n13) øDe quÈ color son las cajas negras de los aviones? \n");
+				printf("\n13) ¬øDe qu√© color son las cajas negras de los aviones? \n");
 				printf("A:NEGRAS             "); 
 				printf("B:NARANJAS\n"); //Esta es la correcta
 				printf("C:BLANCAS           ");  
 				printf("D:LUMINISCENTES\n"); 
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta114(){
-				printf("\n14) øCu·nto durÛ la famosa Guerra de los 100 aÒos? \n");
+				printf("\n14) ¬øCu√°nto dur√≥ la famosa Guerra de los 100 a√±os? \n");
 				printf("A:107           "); 
 				printf("B:100\n"); 
 				printf("C:116           "); //Esta es la correcta 
 				printf("D:97\n"); 
 					
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
 			
 			void pregunta115(){
-				printf("\n15) øCu·ntas vÈrtebras forman la columna vertebral humana, en la etapa adulta?\n");
+				printf("\n15) ¬øCu√°ntas v√©rtebras forman la columna vertebral humana, en la etapa adulta?\n");
 				printf("A:28           "); 
 				printf("B:24\n"); //Esta es la correcta.
 				printf("C:33           ");  
 				printf("D:30\n"); 
 				
-				printf("\nIntroduzca la letra que considere la opciÛn corrrecta: ");
+				printf("\nIntroduzca la letra que considere la opci√≥n corrrecta: ");
 			}
