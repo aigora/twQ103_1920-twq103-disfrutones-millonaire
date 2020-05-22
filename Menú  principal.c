@@ -3,6 +3,15 @@
 #include <string.h>
 #include<Windows.h>
 
+struct registro{
+	int nMatricula;
+	char nombre[100];
+	char apellido[100];
+	char nombrecompleto[300];
+	int edad;
+};
+
+
 int main()
 {
 	FILE * pfichero1;
@@ -11,17 +20,27 @@ int main()
 	SetConsoleCP(1252);
 	SetConsoleOutputCP(1252); //Para que al introducir una ñ en una respuesta, el programa sea capaz de sacar por pantalla esa ñ
 		
-	char caracter, nombre[100], apellido[100], nombrecompleto[150], salto;
+	struct registro login[300];
+		
+	char caracter, salto;
 	int resultado=0, opcion1, opcion2, x, dificultad;
 				
 	printf("Introduzca su nombre: ");
-	gets(nombre);
+	gets(login[100].nombre);
 	printf("Introduzca su apellido: ");
-	gets(apellido);
-	strcpy(nombrecompleto, nombre);
+	gets(login[100].apellido);
+	strcpy(login[300].nombrecompleto, login[100].nombre);
+	printf("Introduzca su numero de matricula: ");
+	scanf("%d", &login[100].nMatricula);
+	printf("Introduzca su edad: ");
+	scanf("%d", &login[100].edad);
+	
+	if(login[100].edad<18){
+		printf("Al ser menor de edad le recomendamos que escoja entre el nivel fácil o el nivel medio");
+	}
 	
 	
-	printf("\nBienvenido %s ", nombrecompleto);
+	printf("\nBienvenido %s ", login[300].nombrecompleto);
 	
 	printf("¿Es la primera vez que juega a este juego?\n1.Sí\n2.No\nIntroduzca 1 (Sí) ó 2 (No)\n");
 	scanf("%d", &opcion1);
