@@ -1,0 +1,68 @@
+SOLUCIONES DE LAS PREGUNTAS DIFÍCILES.
+	1) ¿Cuantos presidentes ha tenido Estados Unidos en toda su historia?
+		Los 45 presidentes, ordenados cronologicamente, son: George Washington (1789-1797), John Adams (1797-1801), Thomas Jefferson (1801-1809), 
+		James Madison (1809-1817), James Monroe (1817-1825), John Quincy Adams (1825-1829), Andrew Jackson (1829-1837), Martin Van Buren (1837-1841), 
+		William Henry Harrison (1841-1841), John Tyler (1841-1845), James K. Polk (1845-1849), Zachary Taylor (1849-1850), Millard Fillmore (1850-1853), 
+		Franklin Pierce (1853-1857), James Buchanan (1857-1861), Abraham Lincoln (1861-1865), Andrew Johnson (1865-1869), Ulysses S. Grant (1869-1877),
+		Rutherford B. Hayes (1877-1881), James A. Garfield (1881-1881), Chester A. Arthur (1881-1885), Grover Cleveland ( 1885-1889), Benjamin Harrison (1889-1893), 
+		Grover Clevenal (1893-1897), William McKinley (1897-1901), Theodore Roosevelt (1901-1909), William Howard Taft (1909-1913), Woodrow Wilson (1913-1921), 
+		Warren G. Harding (1921-1923), Calvin Coolidge (1923-1929), Herbert Hoover (1929-1933), Franklin D. Roosevelt (1933-1945), Harry S. Truman (1945-1953), 
+		Dwight D. Eisenhower (1953-1961), John F. Kennedy (1961-1963), Lyndon B. Johnson (1963-1969), Richard Nixon (1969-1974), Gerald Ford (1974-1977),
+		Jimmy Carter (1977-1981), Ronald Reagan (1981-1989), George H. W. Bush (1989-1993), Bill Clinton (1993-2001), George W. Bush (2001-2009), 
+		Barack Obama (2009-2017) y Donald Trump (2017-actualidad).
+	
+	2) ¿En el viaje de vuelta de America de Colon, cual fue el barco que no regresó?
+		La Santa María no retornó a España al embarrancar en la isla Española en diciembre de 1492 ya que sus restos sirvieron para construir el Fuerte Navidad, 
+		el primer asentamiento español en América.
+	
+	3) El perro ladra, el gato maulla, el cuervo grazna y el elefante...
+		El sonido que emite un elefante se llama barrito. 
+		Soluión: El elefante barrita. 
+
+	4) ¿Cuál es el océano más grande?
+		El océano más grande es el Océano Pacífico, con una superficie total de 165.700.000 km².
+
+	5) ¿En qué año comenzó y terminó la II Guerra Mundial?
+		La II Guerra Mundial comenzó en 1939 y finalizó en 1945.
+
+	6) ¿Cuál fue el primer metal que empleó el hombre?
+		El primer metal que utilizó el hombre fue el cobre.
+
+	7) ¿Cuál es el único mamífero capaz de volar?
+		El único mamifero capaz de VOLAR o llevar a cabo un vuelo activo es el murciélago.
+
+	8) ¿Cúal es el elemento más caro de la tabla periódica?
+		El ORO tiene un precio de 35 240,00€/Kg, el PLATINO 24 447,00€/Kg, el CESIO 67 734,00€/Kg y el RODIO 70 908,00€/Kg.
+
+	9)  ¿Cúal fue la primera película Walt Disney?
+		El 21 de diciembre de 1937 se estrenó la primera película de dibujos animados de Walt Disney, Blancanieves y los siete enanitos.
+	
+	10) ¿Cuál fue el primer ser/es vivo/s en viajar al espacio?
+		El 20 de febrero de 1947 EEUU lanzó los primeros animales, moscas de la fruta, en un cohete pero estas solo llegaron a los 109km de altura sinn llegar al 
+		espacio que se encuentra a 118 km de altura. 
+		El 14 de junio de 1949, Estados Unidos lanzó el primer mamífero al espacio: Albert II, un mono rhesus, a bordo de un cohete. Albert II alcanzó los 134 km 
+		de altitud superando asi los 118 km que marcan la frontera. Pero al ingresar en la atmósfera el sistema de paracaídas falló y el simio murió en la colisión 
+		contra La Tierra. 
+		El 29 de enero de 1951 la Unión Soviética lanzó al espacio, aunque no puso en órbita, la nave que llevaba a los perros Tsygan y Dezik. Los dos perros sobrevivieron 
+		al vuelo, aunque uno de ellos moriría en una misión posterior. 
+		El 3 de noviembre de 1957, la Unión Soviética lanzó al espacio y además puso en órbita a la perra moscovita Laika, que tripuló el Sputnik 2. Laika murió a las 5 
+		horas de vuelo debido al estrés y el sobrecalentamiento.
+
+	11) ¿A cuánto equivale el numero Pi?
+		p (pi) es la relación entre la longitud de una circunferencia y su diámetro en geometría euclidiana. Su valor es: 3.14159265358979323846…
+
+	12) ¿Cuál es el primero de los números primos?
+		Los números primos son aquellos que únicamente son divisibles entre ellos mismos y la unidad. El primero de los números primos es el 2.
+
+	13) ¿De qué color son las cajas negras de los aviones?
+		Las cajas negras de los aviones, para poder encontrarlas con mayor facilidad tienen que ser de un color llamativo como es el naranja.
+
+	14) ¿Cuánto duró la famosa Guerra de los Cien Años?
+		 La Guerra de los Cien Años fue un conflicto armado entre los reinos de Francia e Inglaterra que duró 116 años (24 de mayo de 1337-19 de octubre de 1453)????.
+
+	15) ¿Cuántas vertebras forman la columna vertebral humana, en la etapa adulta?
+		En los seres humanos hay 33 vértebras durante la etapa fetal y en la niñez (7 cervicales + 12 torácicas + 5 lumbares + 5 sacras + 4 del cóccix),? y durante 
+		la etapa adulta, solo hay 24 debido a que los huesos del sacro y el coxis se unen convirtiéndose en un hueso cada uno.
+	
+
+	
